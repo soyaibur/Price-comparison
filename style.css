@@ -1,0 +1,131 @@
+*, *::before, *::after{
+    box-sizing: border-box;
+}
+body{
+    --background-color: #f1f1f1;
+    --purple-color: rgb(60, 82, 206);
+    --body-font-family: 'Lato', sans-serif;
+    --heading-font-family: 'Poppins', sans-serif;
+
+    margin:0;
+    width: 100vw;
+    height: 100vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--body-font-family);
+    background-color: turquoise;
+
+}
+.price-comparison{
+   background-color: var(--background-color);
+   margin:1em;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   align-items: stretch;
+  
+}
+
+.column{
+  padding: 1em;
+  background-color: white;
+  min-width: 250px;
+  border-radius: 10px;
+  position:relative;
+  -webkit-box-shadow: 0px 0px 34px 1px rgba(0,0,0,0.55); 
+box-shadow: 0px 0px 34px 1px rgba(0,0,0,0.55);
+}
+.column:first-child{
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+.column:last-child{
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+.header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--heading-font-family);
+    font-weight: 900;
+
+}
+.price{
+    display: flex;
+    font-size: 3em;
+    position: relative;
+    margin-bottom: .3em;
+}
+.dollar-sign{
+    position: absolute;
+    font-size: .4em;
+    top:0;
+    left:0;
+    margin-left: -.7em;
+}
+.per-month{
+  font-size: .3em;
+  bottom:15px;
+  position: absolute;
+  right: 0;
+  margin-right: -1.9em;
+}
+.divider{
+    height: 1px;
+    width: 170px;
+    background-color: rgb(167, 166, 166);
+    border-radius: 50%;
+    margin-bottom: 1em;
+}
+.purple{
+    background-color: var(--purple-color);
+    color:white;
+    margin-top: -1em;
+    margin-bottom:-1em;
+    padding-top:2em;
+    z-index: 2;
+    
+}
+.purple .cta{
+    background-color: white;
+    color: var(--purple-color);
+}
+.purple .cta:hover{
+    background-color: #d8d5d5;
+}
+.cta{
+    background-color: none;
+    border:none;
+    outline:none;
+    width:100%;
+    margin-top:1em;
+    padding:.5em;
+    border-radius: 5px;
+    background-color: var(--purple-color);
+    color:white;
+    font-family: var(--body-font-family);
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 1em;
+}
+.cta:hover{
+    background-color: #2833da;
+}
+.most-populer{
+    position: absolute;
+    top:10px;
+    right:10px;
+    padding:.2em;
+    background-color: rgb(233, 202, 27);
+    font-size: .7em;
+}
+.not-ok{
+    text-decoration-line: line-through;
+    opacity: .7;
+}
+.single-feature img{
+    margin-right: .5em;
+}
